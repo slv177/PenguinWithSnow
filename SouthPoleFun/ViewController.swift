@@ -199,6 +199,7 @@ class ViewController: UIViewController {
         height: self.walkSize.height)
       self.loadWalkAnimation()
     })
+    planeDepart()
   }
     
   func planeDepart() {
@@ -217,8 +218,8 @@ class ViewController: UIViewController {
 
       UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.25) {
         self.planeImage.center.x += 300.0
-        self.planeImage.center.y -= 50.0
-        self.planeImage.alpha = 0.0
+        self.planeImage.center.y -= 100.0
+        self.planeImage.alpha = 0.5
       }
 
       UIView.addKeyframe(withRelativeStartTime: 0.51, relativeDuration: 0.01) {
