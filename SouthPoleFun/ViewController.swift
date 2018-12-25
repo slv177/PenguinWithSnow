@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     @IBOutlet var penguin: UIImageView!
     @IBOutlet var slideButton: UIButton!
     @IBOutlet weak var planeImage: UIImageView!
+    @IBAction func planeUp(_ sender: Any) {
+        planeDepart()
+    }
     
     
     
@@ -63,8 +66,6 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    planeDepart()
 
     //grab the sizes of the different sequences
     walkSize = walkFrames[0].size
@@ -199,7 +200,7 @@ class ViewController: UIViewController {
         height: self.walkSize.height)
       self.loadWalkAnimation()
     })
-    planeDepart()
+
   }
     
   func planeDepart() {

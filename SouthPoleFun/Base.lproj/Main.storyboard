@@ -59,6 +59,14 @@
                                     <action selector="actionSlide:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1x0-4M-FTY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="73S-jI-kYG">
+                                <rect key="frame" x="16" y="8" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn-up"/>
+                                <connections>
+                                    <action selector="planeUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b96-Jp-hrV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -78,6 +86,7 @@
         <image name="btn-left" width="55" height="55"/>
         <image name="btn-right" width="55" height="55"/>
         <image name="btn-slide" width="55" height="55"/>
+        <image name="btn-up" width="55" height="55"/>
         <image name="plane" width="85" height="36"/>
         <image name="walk01" width="108" height="96"/>
     </resources>
